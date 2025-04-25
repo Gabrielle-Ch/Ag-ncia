@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agência Criativa Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Agência Criativa Web</h1>
+    <nav class="menu">
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <div class="menu-links" id="menu-links">
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section id="home" class="intro">
+      <h2>Transformamos ideias em realidade digital</h2>
+      <picture>
+        <source srcset="logo.jpg" media="(min-width: 1024px)">
+        <source srcset="logo.jpg" media="(min-width: 600px)">
+        <img src="logo.jpg" alt="Banner Agência Criativa" class="banner-img">
+      </picture>
+      <p>Criação de sites modernos, responsivos e personalizados para seu negócio crescer!</p>
+      <button>Fale conosco</button>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <h2>Sobre Nós</h2>
+      <p>Somos uma agência apaixonada por tecnologia e design. Acreditamos que cada projeto é único e deve refletir a essência do cliente. Nosso foco é inovação, criatividade e resultados.</p>
+    </section>
+
+    <section id="servicos" class="services">
+      <h2>O que fazemos</h2>
+      <div class="grid-services">
+        <div class="service">Web Design</div>
+        <div class="service">Desenvolvimento Front-end</div>
+        <div class="service">UX/UI Design</div>
+        <div class="service">Consultoria Digital</div>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="testimonials">
+      <h2>Depoimentos</h2>
+      <p>"Profissionais incríveis! Meu site ficou moderno e funcional." – Cliente 1</p>
+      <p>"Recomendo de olhos fechados. Atendimento excelente!" – Cliente 2</p>
+    </section>
+
+    <section id="contato" class="contact">
+      <h2>Contato</h2>
+      <p>Endereço: Rua Fictícia, 123 - Cidade Web</p>
+      <p>Telefone: (11) 99999-9999</p>
+      <p>Email: contato@webagencia.com</p>
+      <form>
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Agência Criativa Web. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const links = document.getElementById('menu-links');
+
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
